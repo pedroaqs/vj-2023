@@ -50,6 +50,12 @@ public class Movimientos : MonoBehaviour
 
             }
         }
+          if (other.gameObject.tag == "Destruir")
+        {
+                Destroy(this.gameObject);
+                
+            
+        }
 
      
     }
@@ -69,6 +75,8 @@ public class Movimientos : MonoBehaviour
               sr.flipX = false;  
 
         }
+
+        
 
        
     }

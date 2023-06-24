@@ -6,6 +6,7 @@ TagManager:
   tags:
   - loopEnemigoIzquierda
   - loopEnemigoDerecha
+  - Destruir
   layers:
   - Default
   - TransparentFX
