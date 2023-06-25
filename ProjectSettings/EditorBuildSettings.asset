@@ -4,6 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
+  m_Scenes: []
+=======
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Inicio/1. Inicio.unity
@@ -26,4 +29,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/3. MundoAcuatico.unity
     guid: f4c4f41fe31b5624c85d6d74d404b7ff
+>>>>>>> c94171172831e3869e7ad4a3cdd851cb58922237
   m_configObjects: {}
