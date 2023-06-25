@@ -4,20 +4,28 @@ using UnityEngine;
 
 public class Bat_Contoller : MonoBehaviour
 {
-    
     public Transform player;
-    public int speed = 1;
+    public int speed = 20;
     float tiempoVel;
+
+    Rigidbody2D rb;
+    Vector3 direction;
+    Vector3 Movimineto;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {   
-           tiempoVel = Time.deltaTime;
+            tiempoVel = Time.deltaTime;
+            MovimientoBat();
+            rb.MovePosition(Movimineto);
+           
+            
+            
     }
 
     public void ataqueEnemigo () {
@@ -43,15 +51,21 @@ public class Bat_Contoller : MonoBehaviour
 
         
     }
-void OnTriggerStay2D(Collider2D other)
-{
-    if(other.gameObject.name == "cuadroDetecte"){
-            Vector3 direction = player.position - transform.position;
-            direction.Normalize();
-    
-            GetComponent<Rigidbody2D>().MovePosition(transform.position + direction * speed * tiempoVel);
+    void OnTriggerStay2D(Collider2D other)
+    {
+        // if(other.gameObject.name == "cuadroDetecte"){
+            
+        // }
     }
-}
 
+    public void MovimientoBat(){
+
+        direction = player.position - transform.position;
+        direction.Normalize();
+        Movimineto = transform.position + direction * speed * tiempoVel;
+        // direction = player.position - transform.position;
+        // direction.Normalize();
+        // GetComponent<Rigidbody2D>().MovePosition(transform.position + direction * speed * tiempoVel);
+    }
 
 }

@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 public class WindowsManager : MonoBehaviour
 {   
     public GameObject ventanaOP;
+    public GameObject ventanaJugar;
+    public GameObject ventanaNiveles;
+    public GameObject ventanaPlayer;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +23,33 @@ public class WindowsManager : MonoBehaviour
     {
         
     }
+    //OPCIONES***********************************
     public void MostrarVentana () {
         ventanaOP.SetActive(true);
     }
     public void OcultarVentana () {
         ventanaOP.SetActive(false);
     }
+    //JUGAR/*************************************
+    public void MostrarVJugar () {
+        ventanaJugar.SetActive(true);
+        ventanaPlayer.SetActive(false);
+    }
+    public void OcultarVJugar () {
+        ventanaJugar.SetActive(false);
+        ventanaPlayer.SetActive(true);
+    }
+    //NIVELES/***********************************
+    public void MostrarVNiveles () {
+        ventanaNiveles.SetActive(true);
+        ventanaPlayer.SetActive(false);
+    }
+    public void OcultarVNiveles () {
+        ventanaNiveles.SetActive(false);
+        ventanaPlayer.SetActive(true);
+    }
+
+
     public void openJugar () {
         SceneManager.LoadScene("2. Jugar");
     }
