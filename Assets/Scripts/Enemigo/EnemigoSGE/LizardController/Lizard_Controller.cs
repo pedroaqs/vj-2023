@@ -99,7 +99,16 @@ public class Lizard_Controller : MonoBehaviour
             ChangeAnimation(1);
         }
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Bala"){
+            Destroy(this.gameObject);
+        }
+    }
+    
     private void ChangeAnimation(int animation){     
         animator.SetInteger("EstadoL",animation);
     }
+
 }

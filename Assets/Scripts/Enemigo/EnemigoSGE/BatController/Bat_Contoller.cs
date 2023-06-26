@@ -68,4 +68,11 @@ public class Bat_Contoller : MonoBehaviour
         // GetComponent<Rigidbody2D>().MovePosition(transform.position + direction * speed * tiempoVel);
     }
 
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Bala"){
+            Destroy(this.gameObject);
+        }
+    }
+
 }

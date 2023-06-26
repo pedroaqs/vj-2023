@@ -59,6 +59,15 @@ public class Ghost_Controller : MonoBehaviour
             ChangeAnimation(AnimacionG_Furia);
         }
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Bala"){
+            Destroy(this.gameObject);
+        }
+    }
+
+
     private void ChangeAnimation(int animation){     
         animator.SetInteger("EstadoG",animation);
     }
