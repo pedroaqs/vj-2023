@@ -38,7 +38,12 @@ public class Slime_Controller : MonoBehaviour
                     paredPosition2,
                     Quaternion.identity) as GameObject;
     }
-
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Bala"){
+            Destroy(this.gameObject);
+        }
+    }
     void OnTriggerEnter2D(Collider2D other){
         Debug.Log("Trigger");
         if(other.gameObject.tag == "Pared"){

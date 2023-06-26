@@ -217,4 +217,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 700ad3eb1c7bcf447817c4c8fef904c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bala: {fileID: 6489125011304194133, guid: 69349d46cc489d44fa51ca99aac36528, type: 3}
   vCorrer: 5

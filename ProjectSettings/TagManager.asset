@@ -9,6 +9,12 @@ TagManager:
   - Destruir
   - Pared
   - Pared2
+<<<<<<< HEAD
+  - Enemigo
+  - Bala
+=======
+  - Destru
+>>>>>>> bdde8f0d13ba2ecfc4f0243dc7e7492a46b40dda
   layers:
   - Default
   - TransparentFX

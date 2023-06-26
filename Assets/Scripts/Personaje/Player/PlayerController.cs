@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     const int animation_Ladder   = 9;
     const int animation_Spin     =10;
 
+    public GameObject bala;
+
     public int vCorrer;
     private int jump_Force = 200;
 
@@ -81,6 +83,9 @@ public class PlayerController : MonoBehaviour
             // }
      
         }
+        if(Input.GetKeyUp(KeyCode.A)){
+             Disparar();
+        }
         if(Input.GetKeyUp(KeyCode.Space)){
              detener(); 
         }
@@ -129,10 +134,26 @@ public class PlayerController : MonoBehaviour
             
         }
     }
+    public void Disparar (){
+        if(sr.flipX == false){
+            var balaposition = transform.position + new Vector3(1,0,0);
+            var gb   = Instantiate(bala,balaposition,Quaternion.identity)
+                        as GameObject;
+            var controller = gb.GetComponent<BalaPlayerController>();
+            controller.SetRightDirection();
+        }
+        if(sr.flipX == true){
+            var balaposition = transform.position + new Vector3(-1,0,0);
+            var gb   = Instantiate(bala,balaposition,Quaternion.identity)
+                        as GameObject;
+            var controller = gb.GetComponent<BalaPlayerController>();
+            controller.SetLeftDirection();
+        }
+    }
     
 
     void OnCollisionEnter2D(Collision2D other)
-    {
+    {           
         aux = 0;
     }
 }
