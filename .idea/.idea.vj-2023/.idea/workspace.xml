@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6eb866ed-7bc0-4c9e-b07d-9c601f9ea25e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2. MundoDesert.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2. MundoDesert.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3. MundoAcuatico.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3. MundoAcuatico.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprints/MapasNuevos/!.Mapa/Pixel Art Platformer - Village Props/Tileset Palette/1.Mapa.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprints/MapasNuevos/!.Mapa/Pixel Art Platformer - Village Props/Tileset Palette/1.Mapa.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprints/MapasNuevos/2. Mapa 2/Artwork/Environment/2.Mapa2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprints/MapasNuevos/2. Mapa 2/Artwork/Environment/2.Mapa2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TitlePalette/Fondo/vecteezy_alien-planet-landscape-space-with-moon-and-stars_20236832.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TitlePalette/Fondo/vecteezy_alien-planet-landscape-space-with-moon-and-stars_20236832.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TitlePalette/PaletteSGE/Title/TilepaletteSGE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TitlePalette/PaletteSGE/Title/TilepaletteSGE.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2Rj9w2bTR1ip0UcMets1lLQiWS3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6eb866ed-7bc0-4c9e-b07d-9c601f9ea25e" name="Changes" comment="" />
+      <created>1687752862492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687752862492</updated>
+      <workItem from="1687752865344" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
