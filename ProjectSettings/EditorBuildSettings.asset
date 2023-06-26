@@ -4,6 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Inicio/1. Inicio.unity
@@ -29,4 +30,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MundoMuerto.unity
     guid: 874a0efc648c81146b8d09a2b775f54d
+=======
+  m_Scenes: []
+>>>>>>> bdde8f0d13ba2ecfc4f0243dc7e7492a46b40dda
   m_configObjects: {}

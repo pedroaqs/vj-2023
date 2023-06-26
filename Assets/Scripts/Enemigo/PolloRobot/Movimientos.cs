@@ -56,6 +56,7 @@ public class Movimientos : MonoBehaviour
                 
             
         }
+        
 
      
     }
@@ -74,6 +75,12 @@ public class Movimientos : MonoBehaviour
             ChangeAnimation(ANIMATION_CAMINAR);
               sr.flipX = false;  
 
+        }
+         if (other.gameObject.tag == "Destru")
+        {
+                Destroy(this.gameObject);
+                
+            
         }
 
         
