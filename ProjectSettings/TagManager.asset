@@ -9,6 +9,7 @@ TagManager:
   - Destruir
   - Pared
   - Pared2
+  - Destru
   layers:
   - Default
   - TransparentFX
