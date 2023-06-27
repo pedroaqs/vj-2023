@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 493114970}
   m_Layer: 0
   m_Name: PolloFeo (1)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1991,7 +1991,7 @@ GameObject:
   - component: {fileID: 809152978}
   m_Layer: 0
   m_Name: PolloFeo (2)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3247,7 +3247,7 @@ GameObject:
   - component: {fileID: 1400046940}
   m_Layer: 0
   m_Name: PolloFeo
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6330,7 +6330,7 @@ GameObject:
   - component: {fileID: 1653018619}
   m_Layer: 0
   m_Name: PolloRobot
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

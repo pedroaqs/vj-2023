@@ -2247,7 +2247,7 @@ GameObject:
   - component: {fileID: 935197090}
   m_Layer: 0
   m_Name: "Ara\xF1a (1)"
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2668,7 +2668,7 @@ GameObject:
   - component: {fileID: 1106946670}
   m_Layer: 0
   m_Name: abeja (1)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3382,7 +3382,7 @@ GameObject:
   - component: {fileID: 1371301245}
   m_Layer: 0
   m_Name: abeja
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5231,7 +5231,7 @@ GameObject:
   - component: {fileID: 1598120640}
   m_Layer: 0
   m_Name: abeja (2)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

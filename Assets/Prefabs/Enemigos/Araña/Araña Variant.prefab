@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Ara\xF1a Variant"
       objectReference: {fileID: 0}
+    - target: {fileID: 4959190182667130256, guid: 4f62fb804524a954a9fccd095082c949, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     - target: {fileID: 4959190182667130257, guid: 4f62fb804524a954a9fccd095082c949, type: 3}
       propertyPath: velocity
       value: 4
