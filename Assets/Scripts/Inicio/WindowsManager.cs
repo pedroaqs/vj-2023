@@ -9,6 +9,7 @@ public class WindowsManager : MonoBehaviour
     public GameObject ventanaJugar;
     public GameObject ventanaNiveles;
     public GameObject ventanaPlayer;
+    public GameObject ventanaControles;
 
 
 
@@ -48,8 +49,17 @@ public class WindowsManager : MonoBehaviour
         ventanaNiveles.SetActive(false);
         ventanaPlayer.SetActive(true);
     }
-
-
+    //CONTROLES/**********************************
+    public void MostrarVControles () {
+        ventanaControles.SetActive(true);
+        ventanaPlayer.SetActive(false);
+    }
+    public void OcultarVControles () {
+        ventanaControles.SetActive(false);
+        ventanaPlayer.SetActive(true);
+    }
+    //HISTORIA/*********************************
+    
     public void openJugar () {
         SceneManager.LoadScene("2. Jugar");
     }
