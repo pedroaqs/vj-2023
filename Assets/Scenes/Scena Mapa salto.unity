@@ -2247,7 +2247,7 @@ GameObject:
   - component: {fileID: 935197090}
   m_Layer: 0
   m_Name: "Ara\xF1a (1)"
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2668,7 +2668,7 @@ GameObject:
   - component: {fileID: 1106946670}
   m_Layer: 0
   m_Name: abeja (1)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3075,7 +3075,7 @@ GameObject:
   - component: {fileID: 1145081852}
   m_Layer: 0
   m_Name: house_6
-  m_TagString: Untagged
+  m_TagString: Puerta5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3140,8 +3140,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145081851}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 34.599224, y: -5.8559933, z: 0}
-  m_LocalScale: {x: 0.84494823, y: 0.8864706, z: 1}
+  m_LocalPosition: {x: 35.5066, y: -6.4232, z: 0}
+  m_LocalScale: {x: 0.6501877, y: 0.7186617, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1117703454}
@@ -3382,7 +3382,7 @@ GameObject:
   - component: {fileID: 1371301245}
   m_Layer: 0
   m_Name: abeja
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5231,7 +5231,7 @@ GameObject:
   - component: {fileID: 1598120640}
   m_Layer: 0
   m_Name: abeja (2)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

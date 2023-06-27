@@ -17,6 +17,10 @@ TagManager:
   - BalaEnemiga
   - Boss
   - Puerta1
+  - Destru
+  - Puerta4
+  - Puerta5
+  - Puerta6
   layers:
   - Default
   - TransparentFX

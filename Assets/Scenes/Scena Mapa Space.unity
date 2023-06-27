@@ -592,9 +592,10 @@ GameObject:
   m_Component:
   - component: {fileID: 439323769}
   - component: {fileID: 439323770}
+  - component: {fileID: 439323771}
   m_Layer: 0
   m_Name: shed
-  m_TagString: Untagged
+  m_TagString: Puerta6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -666,6 +667,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &439323771
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439323768}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.11, y: 3.61}
+    newSize: {x: 5.11, y: 3.61}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.11, y: 3.61}
+  m_EdgeRadius: 0
 --- !u!1 &441678743
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,7 +793,7 @@ GameObject:
   - component: {fileID: 493114970}
   m_Layer: 0
   m_Name: PolloFeo (1)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1991,7 +2018,7 @@ GameObject:
   - component: {fileID: 809152978}
   m_Layer: 0
   m_Name: PolloFeo (2)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3247,7 +3274,7 @@ GameObject:
   - component: {fileID: 1400046940}
   m_Layer: 0
   m_Name: PolloFeo
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6330,7 +6357,7 @@ GameObject:
   - component: {fileID: 1653018619}
   m_Layer: 0
   m_Name: PolloRobot
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
