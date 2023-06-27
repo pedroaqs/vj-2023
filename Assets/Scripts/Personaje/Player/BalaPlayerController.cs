@@ -36,12 +36,16 @@ public class BalaPlayerController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject.tag == "Enemigo"){
-            GameManajerC.GanarPuntos(1);
+            GameManajerC.GanarPuntos(5);
+            GameManajerC.GanarVida(2);
+            Destroy(this.gameObject);
+
+        }
+        if(other.gameObject.tag == "BalaEnemiga"){
             Destroy(this.gameObject);
 
         }
         if(other.gameObject.tag == "Boss"){
-            GameManajerC.GanarPuntos(5);
             Destroy(this.gameObject);
         }
     }

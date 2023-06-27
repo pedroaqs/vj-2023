@@ -21,8 +21,7 @@ public class Bat_Contoller : MonoBehaviour
     void Update()
     {   
             tiempoVel = Time.deltaTime;
-            MovimientoBat();
-            rb.MovePosition(Movimineto);
+           
            
             
             
@@ -53,9 +52,10 @@ public class Bat_Contoller : MonoBehaviour
     }
     void OnTriggerStay2D(Collider2D other)
     {
-        // if(other.gameObject.name == "cuadroDetecte"){
-            
-        // }
+        if(other.gameObject.name == "cuadroDetecte"){
+            MovimientoBat();
+            rb.MovePosition(Movimineto);
+        }
     }
 
     public void MovimientoBat(){

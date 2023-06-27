@@ -25,6 +25,7 @@ public class GameManajer_Controller : MonoBehaviour
     string Mundo5 = "Scena Mapa salto";
     string Mundo6 = "Scena Mapa Space";
 
+    private bool bandEst;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +56,9 @@ public class GameManajer_Controller : MonoBehaviour
         if(gamedata.Bnivel5 == true){
             nivelText.text   = "Nivel: "   + gamedata.Nivel5;
         }
+        if(gamedata.Bnivel6 == true){
+            nivelText.text   = "Nivel: "   + gamedata.Nivel6;
+        }
         
         
     }
@@ -66,7 +70,26 @@ public class GameManajer_Controller : MonoBehaviour
         LoadScreenTextsSGE();
     }
     public void GanarVida(int cant){
-        gamedata.Vida += cant;
+
+        for(int i=0; i<cant;i++){
+            if(gamedata.Vida < 100){
+                gamedata.Vida++;
+                LoadScreenTextsSGE();
+            }    
+        }
+        
+        gameRepository.SaveDataSGE(gamedata);
+        LoadScreenTextsSGE();
+    }
+    public void PerderVida(int cant){
+         for(int i=0; i<cant;i++){
+            if(gamedata.Vida > 0){
+                gamedata.Vida--;
+                LoadScreenTextsSGE();
+            }else{
+                SceneManager.LoadScene("1. Inicio");
+            }    
+        }
         gameRepository.SaveDataSGE(gamedata);
         LoadScreenTextsSGE();
     }
@@ -75,25 +98,72 @@ public class GameManajer_Controller : MonoBehaviour
         gameRepository.SaveDataSGE(gamedata);
         LoadScreenTextsSGE();
     }
+    public string BalaEscogida(){
+        return gamedata.Arma;
+    }
+    public void EstadoNivel(int nivel,bool band){
+        if (nivel == 2){
+            gamedata.Bnivel2 = band;
+        }
+        if (nivel == 3){
+            gamedata.Bnivel3 = band;
+        }
+        if (nivel == 4){
+            gamedata.Bnivel4 = band;
+        }
+        if (nivel == 5){
+            gamedata.Bnivel5 = band;
+        }
+        if (nivel == 6){
+            gamedata.Bnivel6 = band;
+        }
+        gameRepository.SaveDataSGE(gamedata);
+    }
+
+
+    public bool resulEstado (int nivel){
+        if (nivel == 2){
+            bandEst = gamedata.Bnivel2;
+        }
+        if (nivel == 3){
+            bandEst = gamedata.Bnivel2;
+        }
+        if (nivel == 4){
+            bandEst = gamedata.Bnivel4;
+        }
+        if (nivel == 5){
+            bandEst = gamedata.Bnivel5;
+        }
+        if (nivel == 6){
+            bandEst = gamedata.Bnivel6;
+        }
+        return bandEst;
+    }
+
             
     public void InicioMain(){
         SceneManager.LoadScene("1. Inicio");
     }
     public void Iniciar () {
-        SceneManager.LoadScene(Mundo1);
+        if(gamedata.Vida>0){
+            SceneManager.LoadScene(Mundo1);
+        }
     }
     public void Reanudar () {
-
-        if(gamedata.Bnivel5 ==true){
-            SceneManager.LoadScene(Mundo5);
-        }else if (gamedata.Bnivel4 == true){
-            SceneManager.LoadScene(Mundo4);
-        }else if (gamedata.Bnivel3 == true){
-            SceneManager.LoadScene(Mundo3);
-        }else if (gamedata.Bnivel2 == true){
-             SceneManager.LoadScene(Mundo2);
-        }else if (gamedata.Bnivel1 == true){
-             SceneManager.LoadScene(Mundo1);
+        if(gamedata.Vida>0){
+            if(gamedata.Bnivel6 == true){
+                SceneManager.LoadScene(Mundo6);
+            }else if(gamedata.Bnivel5 ==true){
+                SceneManager.LoadScene(Mundo5);
+            }else if (gamedata.Bnivel4 == true){
+                SceneManager.LoadScene(Mundo4);
+            }else if (gamedata.Bnivel3 == true){
+                SceneManager.LoadScene(Mundo3);
+            }else if (gamedata.Bnivel2 == true){
+                SceneManager.LoadScene(Mundo2);
+            }else if (gamedata.Bnivel1 == true){
+                SceneManager.LoadScene(Mundo1);
+            }
         }          
     }
     public void Reiniciar () {
@@ -102,19 +172,42 @@ public class GameManajer_Controller : MonoBehaviour
     }
 
     public void NivelBoton1 (){
-
+        if(gamedata.Vida>0){
+            if(gamedata.Bnivel1 == true){
+                SceneManager.LoadScene(Mundo1);
+            }
+        }
     }
     public void NivelBoton2 (){
-
+        if(gamedata.Vida>0){
+            if(gamedata.Bnivel2 == true){
+                SceneManager.LoadScene(Mundo2);
+            }
+        }
     }
     public void NivelBoton3 (){
-
+        if(gamedata.Vida>0){
+            if(gamedata.Bnivel3 == true){
+                SceneManager.LoadScene(Mundo3);
+            }
+        }
     }
     public void NivelBoton4 (){
-
+        if(gamedata.Vida>0){
+            if(gamedata.Bnivel4 == true){
+                SceneManager.LoadScene(Mundo4);
+            }
+        }
     }
     public void NivelBoton5 (){
-
+        if(gamedata.Bnivel5 == true){
+            SceneManager.LoadScene(Mundo5);
+        }
+    }
+    public void NivelBoton6 (){
+        if(gamedata.Bnivel6 == true){
+            SceneManager.LoadScene(Mundo6);
+        }
     }
 
     // Update is called once per frame

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {   
+    GameManajer_Controller GameManajerC;
+
     const int animation_Idle     = 1; 
     const int animation_Jump     = 2;
     const int animation_Run      = 3;
@@ -32,6 +34,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        GameManajerC = GameObject.Find("GameManajer").GetComponent<GameManajer_Controller>();
 
     }
 
@@ -155,5 +158,28 @@ public class PlayerController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {           
         aux = 0;
+        if(other.gameObject.tag == "Enemigo"){
+            GameManajerC.PerderVida(5);
+        }
+        if(other.gameObject.tag == "BalaEnemiga"){
+            Debug.Log("Balaaaaaaaaaaaaa");
+            GameManajerC.PerderVida(2);
+        }
+        if(other.gameObject.tag == "Lava"){
+            GameManajerC.PerderVida(2);
+        }
+        if(other.gameObject.tag == "Boss"){
+            GameManajerC.PerderVida(5);
+        }
+        
     }
+    void OnTriggerStay2D(Collider2D other)
+    {
+        
+        
+        if(other.gameObject.tag == "Puerta1" && Input.GetKey(KeyCode.E) ){
+            GameManajerC.NivelBoton2();    
+        }
+    }
+ 
 }

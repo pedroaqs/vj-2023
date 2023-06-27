@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ghost_Controller : MonoBehaviour
 {   
 
+    GameManajer_Controller GameManajerC;
     public Transform player;
     Animator animator;
     private int speed = 10;
@@ -14,11 +15,14 @@ public class Ghost_Controller : MonoBehaviour
     const int AnimacionG_Atack = 2;
 
     private bool bandActuar;
+    int acumularBalas;
     // Start is called before the first frame update
     void Start()
     {   
+        acumularBalas = 1;
         bandActuar = false;
         animator = GetComponent<Animator>();
+        GameManajerC = GameObject.Find("GameManajer").GetComponent<GameManajer_Controller>();
 
     }
 
@@ -63,8 +67,16 @@ public class Ghost_Controller : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "Bala"){
-            Destroy(this.gameObject);
+            Debug.Log("acumulaciones: "+ acumularBalas);
+            if(acumularBalas ==10){
+                Destroy(this.gameObject);
+                GameManajerC.EstadoNivel(2,true);
+                GameManajerC.GanarPuntos(50);
+                GameManajerC.GanarVida(10);
+            }
+            acumularBalas++;
         }
+        
     }
 
 

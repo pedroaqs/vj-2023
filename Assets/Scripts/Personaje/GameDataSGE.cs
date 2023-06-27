@@ -13,12 +13,14 @@ public class GameDataSGE
     public string Nivel3;
     public string Nivel4;
     public string Nivel5;
+    public string Nivel6;
 
     public bool Bnivel1;
     public bool Bnivel2;
     public bool Bnivel3;
     public bool Bnivel4;
     public bool Bnivel5;
+    public bool Bnivel6;
 
 
     
@@ -32,12 +34,14 @@ public class GameDataSGE
         Nivel3    = "Nivel 3";
         Nivel4    = "Nivel 4";
         Nivel5    = "Nivel 5";
+        Nivel6    = "Nivel 6";
 
         Bnivel1   = true;
         Bnivel2   = false;
         Bnivel3   = false;
         Bnivel4   = false;
         Bnivel5   = false;
+        Bnivel6   = false;
         
 
 

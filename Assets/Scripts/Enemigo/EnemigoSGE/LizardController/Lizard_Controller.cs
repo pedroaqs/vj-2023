@@ -10,7 +10,7 @@ public class Lizard_Controller : MonoBehaviour
     
     public GameObject bala;
 
-    private int run_vel = 2;
+    private int run_vel = 4;
 
     public float Pos;   
     public float Pos2;

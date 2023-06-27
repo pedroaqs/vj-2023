@@ -3,7 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemigo
+  - Bala
+  - Pared
+  - Pared2
+  - loopEnemigoIzquierda
+  - loopEnemigoDerecha
+  - Destruir
+  - Lava
+  - Plataforma
+  - Suelo
+  - BalaEnemiga
+  - Boss
+  - Puerta1
   layers:
   - Default
   - TransparentFX
