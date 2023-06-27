@@ -26,4 +26,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Inicio/1. Inicio.unity
     guid: ad51dab33b8d88d418c0fe0b59462243
+  - enabled: 1
+    path: Assets/Scenes/Historia/HistoriaInicio 1.unity
+    guid: 5e7d6895e4fce554c83f08b2409ef24d
+  - enabled: 1
+    path: Assets/Scenes/Historia/HistoriaInicio2.unity
+    guid: afda1b69cf1da274cb1ae54ac0af621b
+  - enabled: 1
+    path: Assets/Scenes/Historia/Historia3.unity
+    guid: c480d2455ad91e04daf55fc581933933
+  - enabled: 1
+    path: Assets/Scenes/Historia/Historia4.unity
+    guid: f085ea64a031d47438df44792036c021
+  - enabled: 1
+    path: Assets/Scenes/Historia/Historia5.unity
+    guid: d933ccf8e3080fa438039d67e4e14b62
+  - enabled: 1
+    path: Assets/Scenes/Historia/Historia6.unity
+    guid: 8b6fa8bd6fa0a9942912f2f1455d2adb
+  - enabled: 1
+    path: Assets/Scenes/Historia/Historia7.unity
+    guid: bca66603873332e44a31aedbefdbc9aa
+  - enabled: 1
+    path: Assets/Scenes/Historia/Historia8.unity
+    guid: 324d8288521fe044b9d82759b051157e
+  - enabled: 1
+    path: Assets/Scenes/Historia/Historia9.unity
+    guid: 549bea8edf5c5e04d983f161682a91cd
   m_configObjects: {}
