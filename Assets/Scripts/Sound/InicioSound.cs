@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class InicioSound : MonoBehaviour
 {   
@@ -19,11 +20,14 @@ public class InicioSound : MonoBehaviour
     public TMP_Text vol;
     // Start is called before the first frame update
     
-    // void Awake() 
-    // {
-    //     DontDestroyOnLoad(gameObject);  
-    // }
-    
+     void Awake() 
+     {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+     }
+     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+         // Silencia el sonido en cada escena cargada
+    }
     // void Awake()
     // {
     //     if (instance == null)
@@ -52,11 +56,14 @@ public class InicioSound : MonoBehaviour
     }
     public void muted (){
         if(aux == 0){
-            musicaAudioSource.mute = true;
+           // musicaAudioSource.mute = true;
+           //AudioListener.pause = true;
+           AudioListener.volume = 0f;
             vol.text = "0";
             aux++;
         }else{
-            musicaAudioSource.mute = false;
+           // AudioListener.pause = false;
+           AudioListener.volume = 1f;
             vol.text = nivelVol.ToString();
             aux = 0;
         }
@@ -78,18 +85,18 @@ public class InicioSound : MonoBehaviour
     }
 
     public void AumentarVolumen () {
-        if(musicaAudioSource.volume < 1f) {
+        if(AudioListener.volume < 1f) {
             nivelVol += 10;
-            musicaAudioSource.volume += 0.1f;
+            AudioListener.volume += 0.1f;
             vol.text = nivelVol.ToString();
     
             
         }
     }
     public void DisminuirVolumen () {
-        if(musicaAudioSource.volume > 0f) {
+        if(AudioListener.volume > 0f) {
             nivelVol -= 10;
-            musicaAudioSource.volume -= 0.1f;
+            AudioListener.volume -= 0.1f;
             vol.text = nivelVol.ToString();
            
         }

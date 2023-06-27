@@ -179,6 +179,10 @@ public class PlayerController : MonoBehaviour
         if(other.gameObject.tag == "Vacio"){
             RegresarPuntoInicio(posInicio.position);
         }
+        if(other.gameObject.tag == "Destruir"){
+            RegresarPuntoInicio(posInicio.position);
+            GameManajerC.PerderVida(2);
+        }
 
         
     }
@@ -197,8 +201,7 @@ public class PlayerController : MonoBehaviour
             GameManajerC.EstadoNivel(3,true);
             GameManajerC.NivelBoton3();    
         }
-        if(other.gameObject.tag == "Puerta3" && Input.GetKey(KeyCode.E) ){
-            GameManajerC.EstadoNivel(4,true);
+        if(other.gameObject.tag == "Puerta3" && Input.GetKey(KeyCode.E) ){  
             GameManajerC.NivelBoton4();    
         }
         if(other.gameObject.tag == "Puerta4" && Input.GetKey(KeyCode.E) ){

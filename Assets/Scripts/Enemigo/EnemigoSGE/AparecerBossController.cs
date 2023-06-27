@@ -19,7 +19,7 @@ public class AparecerBossController : MonoBehaviour
     public float aparecerTime    = 10f;
     public float desaparecerTime = 10f;
 
-    private bool isVisible = true;
+    //private bool isVisible = true;
     private float timer    = 0f;
     // Start is called before the first frame update
     void Start()

@@ -26,7 +26,7 @@ public class GameManajer_Controller : MonoBehaviour
     string Mundo4 = "MundoMuerto";
     string Mundo5 = "Scena Mapa salto";
     string Mundo6 = "Scena Mapa Space";
-    string Mundo7 = "Ganastes";
+    string Mundo7 = "Ganaste";
     string Mundo8 = "Perdiste";
 
     private bool bandEst;
@@ -207,19 +207,36 @@ public class GameManajer_Controller : MonoBehaviour
         }
     }
     public void NivelBoton5 (){
-        if(gamedata.Bnivel5 == true){
-            SceneManager.LoadScene(Mundo5);
+        if(gamedata.Vida>0){
+            if(gamedata.Bnivel5 == true){
+                 SceneManager.LoadScene(Mundo5);
+            }
         }
     }
     public void NivelBoton6 (){
-        if(gamedata.Bnivel6 == true){
-            SceneManager.LoadScene(Mundo6);
+        if(gamedata.Vida>0){
+            if(gamedata.Bnivel6 == true){
+                SceneManager.LoadScene(Mundo6);
+            }
         }
     }
     public void NivelBoton7 (){
-        if(gamedata.Bnivel7 == true){
-            SceneManager.LoadScene(Mundo7);
+        if(gamedata.Vida>0){
+            if(gamedata.Bnivel7 == true){
+                SceneManager.LoadScene(Mundo7);
+            }
         }
+    }
+
+    public void InformacionHist(){
+        SceneManager.LoadScene("HistoriaInicio 1");
+    }
+    public void SalirPlay(){
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 
     // Update is called once per frame

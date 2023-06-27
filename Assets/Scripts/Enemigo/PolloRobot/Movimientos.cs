@@ -26,7 +26,7 @@ public class Movimientos : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2 (-velocity,0);
-        ChangeAnimation(ANIMATION_CAMINAR);
+        //ChangeAnimation(ANIMATION_CAMINAR);
  
     }
 
@@ -70,14 +70,14 @@ public class Movimientos : MonoBehaviour
         
         if(other.gameObject.tag == "loopEnemigoIzquierda"){
             velocity *= -1;
-            ChangeAnimation(ANIMATION_CAMINAR);
+           // ChangeAnimation(ANIMATION_CAMINAR);
             sr.flipX = true;    
 
 
         }
         if(other.gameObject.tag == "loopEnemigoDerecha"){
             velocity *= -1;
-            ChangeAnimation(ANIMATION_CAMINAR);
+          //  ChangeAnimation(ANIMATION_CAMINAR);
               sr.flipX = false;  
 
         }
