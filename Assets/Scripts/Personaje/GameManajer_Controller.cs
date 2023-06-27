@@ -13,6 +13,8 @@ public class GameManajer_Controller : MonoBehaviour
     GameDataSGE gamedata = new GameDataSGE();
     GameRepositorySGE gameRepository;
     
+    private bool isPaused = false;
+
     public TMP_Text puntajeText;
     public TMP_Text vidaText;
     public TMP_Text armaText;
@@ -143,6 +145,20 @@ public class GameManajer_Controller : MonoBehaviour
             
     public void InicioMain(){
         SceneManager.LoadScene("1. Inicio");
+    }
+    public void Pausar(){
+        isPaused = !isPaused;
+
+        if (isPaused)
+        {
+            Time.timeScale = 0f; // Pausar el juego
+            Debug.Log("El juego está pausado");
+        }
+        else
+        {
+            Time.timeScale = 1f; // Reanudar el juego
+            Debug.Log("El juego ha sido reanudado");
+        }
     }
     public void Iniciar () {
         if(gamedata.Vida>0){
