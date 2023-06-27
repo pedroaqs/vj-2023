@@ -21,6 +21,10 @@ TagManager:
   - Puerta4
   - Puerta5
   - Puerta6
+  - Vacio
+  - Puerta2
+  - Faros
+  - Puerta3
   layers:
   - Default
   - TransparentFX

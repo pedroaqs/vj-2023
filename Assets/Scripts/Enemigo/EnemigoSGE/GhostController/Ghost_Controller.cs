@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ghost_Controller : MonoBehaviour
 {   
@@ -8,7 +9,7 @@ public class Ghost_Controller : MonoBehaviour
     GameManajer_Controller GameManajerC;
     public Transform player;
     Animator animator;
-    private int speed = 10;
+    public int speed = 10;
     float tiempoVel;
 
     const int AnimacionG_Furia = 1;
@@ -16,11 +17,13 @@ public class Ghost_Controller : MonoBehaviour
 
     private bool bandActuar;
     int acumularBalas;
+    private string sceneName;
     // Start is called before the first frame update
     void Start()
     {   
         acumularBalas = 1;
         bandActuar = false;
+        sceneName = SceneManager.GetActiveScene().name;
         animator = GetComponent<Animator>();
         GameManajerC = GameObject.Find("GameManajer").GetComponent<GameManajer_Controller>();
 
@@ -69,10 +72,16 @@ public class Ghost_Controller : MonoBehaviour
         if(other.gameObject.tag == "Bala"){
             Debug.Log("acumulaciones: "+ acumularBalas);
             if(acumularBalas ==10){
-                Destroy(this.gameObject);
-                GameManajerC.EstadoNivel(2,true);
+                if(sceneName == "1. MundoInicio"){
+                    GameManajerC.EstadoNivel(2,true);    
+                }
+                if(sceneName == "3. MundoAcuatico"){
+                    GameManajerC.EstadoNivel(4,true);    
+                }
+                
                 GameManajerC.GanarPuntos(50);
                 GameManajerC.GanarVida(10);
+                Destroy(this.gameObject);
             }
             acumularBalas++;
         }

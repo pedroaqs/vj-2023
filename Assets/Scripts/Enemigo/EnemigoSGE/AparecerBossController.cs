@@ -16,8 +16,8 @@ public class AparecerBossController : MonoBehaviour
 
 
 
-    private float aparecerTime    = 10f;
-    private float desaparecerTime = 10f;
+    public float aparecerTime    = 10f;
+    public float desaparecerTime = 10f;
 
     private bool isVisible = true;
     private float timer    = 0f;

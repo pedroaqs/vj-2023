@@ -3090,6 +3090,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3303111538422503653, guid: a9f9f31b5bd90dc428aa4223a9ef7bb7, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3303111538422503653, guid: a9f9f31b5bd90dc428aa4223a9ef7bb7, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8038621
+      objectReference: {fileID: 0}
+    - target: {fileID: 3303111538422503653, guid: a9f9f31b5bd90dc428aa4223a9ef7bb7, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4187405010742207381, guid: a9f9f31b5bd90dc428aa4223a9ef7bb7, type: 3}
       propertyPath: m_Name
       value: AumVol

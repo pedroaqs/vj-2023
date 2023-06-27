@@ -48,5 +48,11 @@ public class BalaPlayerController : MonoBehaviour
         if(other.gameObject.tag == "Boss"){
             Destroy(this.gameObject);
         }
+        if(other.gameObject.tag == "Suelo"){
+            Destroy(this.gameObject);
+        }
+        if(other.gameObject.tag == "Plataforma"){
+            Destroy(this.gameObject);
+        }
     }
 }

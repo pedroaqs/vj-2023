@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {   
     GameManajer_Controller GameManajerC;
-
+    public Transform posInicio;
     const int animation_Idle     = 1; 
     const int animation_Jump     = 2;
     const int animation_Run      = 3;
@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Rigidbody2D rb;
     SpriteRenderer sr;
+    Transform tf;
 
     int aux = 0;
     
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Jugando");
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        tf = GetComponent<Transform>();
         animator = GetComponent<Animator>();
         GameManajerC = GameObject.Find("GameManajer").GetComponent<GameManajer_Controller>();
 
@@ -154,7 +156,10 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-
+    private void RegresarPuntoInicio(Vector3 position)
+    {
+        tf.transform.position = position;
+    }
     void OnCollisionEnter2D(Collision2D other)
     {           
         aux = 0;
@@ -171,15 +176,43 @@ public class PlayerController : MonoBehaviour
         if(other.gameObject.tag == "Boss"){
             GameManajerC.PerderVida(5);
         }
+        if(other.gameObject.tag == "Vacio"){
+            RegresarPuntoInicio(posInicio.position);
+        }
+
         
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Faros"){
+            GameManajerC.GanarPuntos(50);    
+        }
     }
     void OnTriggerStay2D(Collider2D other)
     {
-        
-        
         if(other.gameObject.tag == "Puerta1" && Input.GetKey(KeyCode.E) ){
             GameManajerC.NivelBoton2();    
         }
+        if(other.gameObject.tag == "Puerta2" && Input.GetKey(KeyCode.E) && GameManajerC.ObtenerPuntos() >=300 ){
+            GameManajerC.EstadoNivel(3,true);
+            GameManajerC.NivelBoton3();    
+        }
+        if(other.gameObject.tag == "Puerta3" && Input.GetKey(KeyCode.E) ){
+            GameManajerC.EstadoNivel(4,true);
+            GameManajerC.NivelBoton4();    
+        }
+        if(other.gameObject.tag == "Puerta4" && Input.GetKey(KeyCode.E) ){
+            GameManajerC.EstadoNivel(5,true);
+            GameManajerC.NivelBoton5();    
+        }
+        if(other.gameObject.tag == "Puerta5" && Input.GetKey(KeyCode.E) ){
+            GameManajerC.EstadoNivel(6,true);
+            GameManajerC.NivelBoton6();    
+        }
+        if(other.gameObject.tag == "Puerta6" && Input.GetKey(KeyCode.E) ){
+            GameManajerC.EstadoNivel(7,true);
+            GameManajerC.NivelBoton7();    
+        }        
     }
  
 }

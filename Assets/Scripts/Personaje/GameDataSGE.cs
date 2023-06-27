@@ -21,6 +21,7 @@ public class GameDataSGE
     public bool Bnivel4;
     public bool Bnivel5;
     public bool Bnivel6;
+    public bool Bnivel7;
 
 
     
@@ -29,12 +30,12 @@ public class GameDataSGE
         Puntaje   = 0;
         Vida      = 100;
         Arma      = "Bala";
-        Nivel1    = "Nivel 1";
-        Nivel2    = "Nivel 2";
-        Nivel3    = "Nivel 3";
-        Nivel4    = "Nivel 4";
-        Nivel5    = "Nivel 5";
-        Nivel6    = "Nivel 6";
+        Nivel1    = "Eros";
+        Nivel2    = "Helios";
+        Nivel3    = "Hefesto";
+        Nivel4    = "Hermes";
+        Nivel5    = "Zura";
+        Nivel6    = "Cronos";
 
         Bnivel1   = true;
         Bnivel2   = false;
@@ -42,6 +43,7 @@ public class GameDataSGE
         Bnivel4   = false;
         Bnivel5   = false;
         Bnivel6   = false;
+        Bnivel7   = false;
         
 
 

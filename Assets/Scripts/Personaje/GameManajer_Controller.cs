@@ -26,13 +26,17 @@ public class GameManajer_Controller : MonoBehaviour
     string Mundo4 = "MundoMuerto";
     string Mundo5 = "Scena Mapa salto";
     string Mundo6 = "Scena Mapa Space";
+    string Mundo7 = "Ganastes";
+    string Mundo8 = "Perdiste";
 
     private bool bandEst;
+    private string sceneName;
     // Start is called before the first frame update
     void Start()
     {
         gameRepository = GetComponent<GameRepositorySGE>();
         gamedata = gameRepository.GetSaveDataSGE();
+        sceneName = SceneManager.GetActiveScene().name;
         LoadScreenTextsSGE();
 
 
@@ -43,23 +47,23 @@ public class GameManajer_Controller : MonoBehaviour
         vidaText.text    = "Vidas: "   + gamedata.Vida;
         armaText.text    = "Arma: "    + gamedata.Arma;
 
-        if(gamedata.Bnivel1 == true){
-            nivelText.text   = "Nivel: "   + gamedata.Nivel1;
+        if(gamedata.Bnivel1 == true && sceneName == Mundo1){
+            nivelText.text   = "Mundo: "   + gamedata.Nivel1;
         }
-        if(gamedata.Bnivel2 == true){
-            nivelText.text   = "Nivel: "   + gamedata.Nivel2;
+        if(gamedata.Bnivel2 == true && sceneName == Mundo2){
+            nivelText.text   = "Mundo: "   + gamedata.Nivel2;
         }
-        if(gamedata.Bnivel3 == true){
-            nivelText.text   = "Nivel: "   + gamedata.Nivel3;
+        if(gamedata.Bnivel3 == true && sceneName == Mundo3){
+            nivelText.text   = "Mundo: "   + gamedata.Nivel3;
         }
-        if(gamedata.Bnivel4 == true){
-            nivelText.text   = "Nivel: "   + gamedata.Nivel4;
+        if(gamedata.Bnivel4 == true && sceneName == Mundo4){
+            nivelText.text   = "Mundo: "   + gamedata.Nivel4;
         }
-        if(gamedata.Bnivel5 == true){
-            nivelText.text   = "Nivel: "   + gamedata.Nivel5;
+        if(gamedata.Bnivel5 == true && sceneName == Mundo5){
+            nivelText.text   = "Mundo: "   + gamedata.Nivel5;
         }
-        if(gamedata.Bnivel6 == true){
-            nivelText.text   = "Nivel: "   + gamedata.Nivel6;
+        if(gamedata.Bnivel6 == true && sceneName == Mundo6){
+            nivelText.text   = "Mundo: "   + gamedata.Nivel6;
         }
         
         
@@ -70,6 +74,9 @@ public class GameManajer_Controller : MonoBehaviour
         Debug.Log("Puntajeeeee:" + gamedata.Puntaje);
         gameRepository.SaveDataSGE(gamedata);
         LoadScreenTextsSGE();
+    }
+    public int ObtenerPuntos(){
+        return gamedata.Puntaje;
     }
     public void GanarVida(int cant){
 
@@ -89,7 +96,7 @@ public class GameManajer_Controller : MonoBehaviour
                 gamedata.Vida--;
                 LoadScreenTextsSGE();
             }else{
-                SceneManager.LoadScene("1. Inicio");
+                SceneManager.LoadScene(Mundo8);
             }    
         }
         gameRepository.SaveDataSGE(gamedata);
@@ -119,30 +126,14 @@ public class GameManajer_Controller : MonoBehaviour
         if (nivel == 6){
             gamedata.Bnivel6 = band;
         }
+        if (nivel == 7){
+            gamedata.Bnivel7 = band;
+        }
         gameRepository.SaveDataSGE(gamedata);
     }
 
 
-    public bool resulEstado (int nivel){
-        if (nivel == 2){
-            bandEst = gamedata.Bnivel2;
-        }
-        if (nivel == 3){
-            bandEst = gamedata.Bnivel2;
-        }
-        if (nivel == 4){
-            bandEst = gamedata.Bnivel4;
-        }
-        if (nivel == 5){
-            bandEst = gamedata.Bnivel5;
-        }
-        if (nivel == 6){
-            bandEst = gamedata.Bnivel6;
-        }
-        return bandEst;
-    }
-
-            
+        
     public void InicioMain(){
         SceneManager.LoadScene("1. Inicio");
     }
@@ -223,6 +214,11 @@ public class GameManajer_Controller : MonoBehaviour
     public void NivelBoton6 (){
         if(gamedata.Bnivel6 == true){
             SceneManager.LoadScene(Mundo6);
+        }
+    }
+    public void NivelBoton7 (){
+        if(gamedata.Bnivel7 == true){
+            SceneManager.LoadScene(Mundo7);
         }
     }
 
