@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 83
+  controlID: 57
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 364
     height: 722.8
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 290.4
     height: 428
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 73
+  controlID: 22
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 74
+  controlID: 23
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -311,7 +311,7 @@ MonoBehaviour:
     m_CachedPref: -50
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
-  m_Palette: {fileID: 5061579110724158596, guid: 43cd31a0928d9214988882c6701d2fc4, type: 3}
+  m_Palette: {fileID: 5289173482673525301, guid: 027db5ce1ff2f4142b49c3de3b59625a, type: 3}
   m_DrawGridGizmo: 1
   m_DrawGizmos: 0
 --- !u!114 &13
@@ -386,39 +386,39 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Enemigo/EnemigoSGE/LizardController
+    - Assets/Sprints/Mobile Game GUI Vector Pack/Sprite/Button
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Enemigo/EnemigoSGE/LizardController
+  - Assets/Sprints/Mobile Game GUI Vector Pack/Sprite/Button
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\quesh\OneDrive\Escritorio\UPN-2023\1. VIDEOJUEGOS\1-
     Repositorio\vj-2023
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: fe660000
-    m_LastClickedID: 26366
-    m_ExpandedIDs: 00000000e0630000e2630000e4630000e6630000e8630000ea630000ec630000ee630000f2630000f4630000f6630000f8630000fa630000fc630000fe630000006400000264000016640000186400001a640000c6ae000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 900}
+    m_SelectedIDs: ee760000
+    m_LastClickedID: 30446
+    m_ExpandedIDs: 000000001e64000020640000226400002464000026640000286400002a6400002c6400002e640000326400003464000036640000386400003a6400003c6400003e640000406400004264000044640000586400006c640000d86800009a730000687c0000367d00005e920000729c0000f49c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Player-Hurt
+      m_OriginalName: Player-Hurt
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 42842
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -430,7 +430,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e0630000e2630000e4630000e6630000e8630000ea630000ec630000ee630000f0630000f2630000f4630000f6630000f8630000fa630000fc630000fe6300000064000002640000
+    m_ExpandedIDs: 000000001e64000020640000226400002464000026640000286400002a6400002c6400002e64000030640000326400003464000036640000386400003a6400003c6400003e640000406400004264000044640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -474,7 +474,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -482,7 +482,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 88}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
@@ -560,9 +560,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8ccafeff7208ffff3409ffff023bfffff83effff3e48fffffe86ffff5097ffffe0faffff2cfbffffa65e0000c45e0000e85e0000125f0000165f00001e5f0000365f0000925f0000a65f0000ba5f000026170100401701007c1701008a170100a8170100ac1701005018010054180100883b0100283d0100
+      m_SelectedIDs: d4bbfdff
+      m_LastClickedID: -148524
+      m_ExpandedIDs: 14b6fdffbab7fdff5abafdffd4bbfdffccbdfdffd6bdfdff14befdff9ebefdffdac0fdff84c5fdff6ac6fdff68d0fdffd6d1fdff82d6fdff14dafdffc8defdff8ce3fdff7ae4fdff12e9fdff80e9fdff5ceafdffc8eafdff34ebfdffc4ebfdff2aecfdffbaf1fdffe215feffa421feff3425feffb628feff502cfeff3e2efefff246fefffc48feffd84afeffa06dfeff208dfeff9c9afeff529efeff569efeffbe9ffeffe4a0feffb0a2feff08adfeff6eb1feff6ab8feff3ebcfeff82c3feff20cbfeff90d1feff5addfeffdadefeffb8ecfeff6eedfeffeef0feff82fdfeffe806ffffba29ffffaa2affff605affff2cfbffffcc5e0000245f0000285f0000325f0000545f0000b85f0000be5f0000ce5f0000f85f00007c2601003649010066490100fc490100324a0100484a01006a56010078560100a2560100125a01008a6e0100d26e01006a770100aa7701003e8a0100da8a0100f08a01001a8b0100648b0100208c0100ba8c01005aa1010000a201003ab00100a8b601000ab7010044b701000ee401007ee40100ace4010050e50100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -849,7 +849,7 @@ MonoBehaviour:
       containerId: overlay-toolbar__top
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -867,9 +867,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -12.336544, y: 1.5412599, z: -92.40321}
+    m_Target: {x: 0.26421538, y: 1.161958, z: 543.5643}
     speed: 2
-    m_Value: {x: -12.336544, y: 1.5412599, z: -92.40321}
+    m_Value: {x: 0.2757524, y: 1.4035563, z: 568.49976}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -920,9 +920,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.35496
+    m_Target: 6.86995
     speed: 2
-    m_Value: 9.35496
+    m_Value: 7.1936646
   m_Ortho:
     m_Target: 1
     speed: 2
