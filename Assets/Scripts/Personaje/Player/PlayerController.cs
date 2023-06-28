@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     const int animation_Spin     =10;
 
     public GameObject bala;
+    public GameObject bala1;
+
 
     public int vCorrer;
     private int jump_Force = 200;
@@ -48,9 +50,9 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.RightArrow)){
             derecha();
             //Attack
-            //if (Input.GetKey(KeyCode.C)){
-            //    ChangeAnimation(Anima_RunShoot);
-            //}
+            if (Input.GetKey(KeyCode.A)){
+               ChangeAnimation(animation_RunShoot);
+            }
            
 
         }
@@ -63,9 +65,9 @@ public class PlayerController : MonoBehaviour
 
           izquierda();
             //Attack
-            //  if (Input.GetKey(KeyCode.C)){
-            //      ChangeAnimation(Anima_RunShoot);
-            //  }
+            if (Input.GetKey(KeyCode.A)){
+               ChangeAnimation(animation_RunShoot);
+            }
         }
         if(Input.GetKeyUp(KeyCode.LeftArrow)){
              detener(); 
@@ -88,14 +90,23 @@ public class PlayerController : MonoBehaviour
             // }
      
         }
+        if(Input.GetKeyDown(KeyCode.A)){
+            ChangeAnimation(animation_RunShoot);
+            Disparar();
+        }
         if(Input.GetKeyUp(KeyCode.A)){
-             Disparar();
+             detener(); 
         }
         if(Input.GetKeyUp(KeyCode.Space)){
              detener(); 
         }
-         
-
+        if(Input.GetKey(KeyCode.Q)){
+             Agacharse();
+        }
+        if(Input.GetKeyUp(KeyCode.Q)){
+             detener(); 
+        }
+        
     }
 
     public void ChangeAnimation(int animation){     
@@ -140,22 +151,43 @@ public class PlayerController : MonoBehaviour
         }
     }
     public void Disparar (){
-        if(sr.flipX == false){
-            var balaposition = transform.position + new Vector3(1,0,0);
-            var gb   = Instantiate(bala,balaposition,Quaternion.identity)
+
+        if(GameManajerC.BalaEscogida() == "Aro"){
+            if(sr.flipX == false){
+                var balaposition = transform.position + new Vector3(1,0,0);
+                var gb   = Instantiate(bala,balaposition,Quaternion.identity)
                         as GameObject;
-            var controller = gb.GetComponent<BalaPlayerController>();
-            controller.SetRightDirection();
+                var controller = gb.GetComponent<BalaPlayerController>();
+                controller.SetRightDirection();
+            }
+            if(sr.flipX == true){
+                var balaposition = transform.position + new Vector3(-1,0,0);
+                var gb   = Instantiate(bala,balaposition,Quaternion.identity)
+                        as GameObject;
+                var controller = gb.GetComponent<BalaPlayerController>();
+                controller.SetLeftDirection();
+            }
         }
-        if(sr.flipX == true){
-            var balaposition = transform.position + new Vector3(-1,0,0);
-            var gb   = Instantiate(bala,balaposition,Quaternion.identity)
+        if(GameManajerC.BalaEscogida() == "Misil"){
+            if(sr.flipX == false){
+                var balaposition1 = transform.position + new Vector3(1,0,0);
+                var gb   = Instantiate(bala1,balaposition1,Quaternion.identity)
                         as GameObject;
-            var controller = gb.GetComponent<BalaPlayerController>();
-            controller.SetLeftDirection();
+                var controller = gb.GetComponent<BalaPlayerController>();
+                controller.SetRightDirection();
+            }
+            if(sr.flipX == true){
+                var balaposition1 = transform.position + new Vector3(-1,0,0);
+                var gb   = Instantiate(bala1,balaposition1,Quaternion.identity)
+                        as GameObject;
+                var controller = gb.GetComponent<BalaPlayerController>();
+                controller.SetLeftDirection();
+            }
         }
     }
-    
+    private void Agacharse(){
+        ChangeAnimation(animation_Slide);
+    }
     private void RegresarPuntoInicio(Vector3 position)
     {
         tf.transform.position = position;
@@ -178,6 +210,7 @@ public class PlayerController : MonoBehaviour
         }
         if(other.gameObject.tag == "Vacio"){
             RegresarPuntoInicio(posInicio.position);
+            GameManajerC.PerderVida(2);
         }
         if(other.gameObject.tag == "Destruir"){
             RegresarPuntoInicio(posInicio.position);
@@ -204,11 +237,11 @@ public class PlayerController : MonoBehaviour
         if(other.gameObject.tag == "Puerta3" && Input.GetKey(KeyCode.E) ){  
             GameManajerC.NivelBoton4();    
         }
-        if(other.gameObject.tag == "Puerta4" && Input.GetKey(KeyCode.E) ){
+        if(other.gameObject.tag == "Puerta4" && Input.GetKey(KeyCode.E)  && GameManajerC.ObtenerVidas() >=50){
             GameManajerC.EstadoNivel(5,true);
             GameManajerC.NivelBoton5();    
         }
-        if(other.gameObject.tag == "Puerta5" && Input.GetKey(KeyCode.E) ){
+        if(other.gameObject.tag == "Puerta5" && Input.GetKey(KeyCode.E)  && GameManajerC.ObtenerPuntos() >= 500 && GameManajerC.ObtenerVidas() >= 50){
             GameManajerC.EstadoNivel(6,true);
             GameManajerC.NivelBoton6();    
         }

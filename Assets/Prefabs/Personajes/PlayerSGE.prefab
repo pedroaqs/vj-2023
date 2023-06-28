@@ -219,4 +219,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posInicio: {fileID: 0}
   bala: {fileID: 6489125011304194133, guid: 69349d46cc489d44fa51ca99aac36528, type: 3}
-  vCorrer: 5
+  bala1: {fileID: 3641843972229891342, guid: d66cb80316105914985aeccf6d45d0b7, type: 3}
+  vCorrer: 6

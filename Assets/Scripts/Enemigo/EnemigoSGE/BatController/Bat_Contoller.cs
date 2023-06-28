@@ -73,6 +73,9 @@ public class Bat_Contoller : MonoBehaviour
         if(other.gameObject.tag == "Bala"){
             Destroy(this.gameObject);
         }
+        if(other.gameObject.tag == "Bala1"){
+            Destroy(this.gameObject);
+        }
     }
 
 }

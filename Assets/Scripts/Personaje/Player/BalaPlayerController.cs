@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BalaPlayerController : MonoBehaviour
 {
-    private float velocity = 5;
+    private float velocity = 8;
     float realVelocity;
     GameManajer_Controller GameManajerC;
     
@@ -28,11 +28,11 @@ public class BalaPlayerController : MonoBehaviour
     }
     public void SetRightDirection(){
         realVelocity = velocity;
-        band = true;
+        band = false;
     }
     public void SetLeftDirection(){
         realVelocity = -velocity;
-        band = false;
+        band = true;
     }
     private void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject.tag == "Enemigo"){

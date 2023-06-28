@@ -47,22 +47,22 @@ public class GameManajer_Controller : MonoBehaviour
         vidaText.text    = "Vidas: "   + gamedata.Vida;
         armaText.text    = "Arma: "    + gamedata.Arma;
 
-        if(gamedata.Bnivel1 == true && sceneName == Mundo1){
+        if(gamedata.Bnivel1 == true && (sceneName == Mundo1 || sceneName == "1. Inicio")){
             nivelText.text   = "Mundo: "   + gamedata.Nivel1;
         }
-        if(gamedata.Bnivel2 == true && sceneName == Mundo2){
+        if(gamedata.Bnivel2 == true && (sceneName == Mundo2 || sceneName == "1. Inicio")){
             nivelText.text   = "Mundo: "   + gamedata.Nivel2;
         }
-        if(gamedata.Bnivel3 == true && sceneName == Mundo3){
+        if(gamedata.Bnivel3 == true && (sceneName == Mundo3 || sceneName == "1. Inicio")){
             nivelText.text   = "Mundo: "   + gamedata.Nivel3;
         }
-        if(gamedata.Bnivel4 == true && sceneName == Mundo4){
+        if(gamedata.Bnivel4 == true && (sceneName == Mundo4 || sceneName == "1. Inicio")){
             nivelText.text   = "Mundo: "   + gamedata.Nivel4;
         }
-        if(gamedata.Bnivel5 == true && sceneName == Mundo5){
+        if(gamedata.Bnivel5 == true && (sceneName == Mundo5 || sceneName == "1. Inicio")){
             nivelText.text   = "Mundo: "   + gamedata.Nivel5;
         }
-        if(gamedata.Bnivel6 == true && sceneName == Mundo6){
+        if(gamedata.Bnivel6 == true && (sceneName == Mundo6 || sceneName == "1. Inicio")){
             nivelText.text   = "Mundo: "   + gamedata.Nivel6;
         }
         
@@ -101,6 +101,9 @@ public class GameManajer_Controller : MonoBehaviour
         }
         gameRepository.SaveDataSGE(gamedata);
         LoadScreenTextsSGE();
+    }
+    public int ObtenerVidas(){
+        return gamedata.Vida;
     }
     public void ArmaName(string name){
         gamedata.Arma = name;

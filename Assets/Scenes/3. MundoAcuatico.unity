@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 500
+  speed: 50
 --- !u!70 &202670868
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 500
+  speed: 50
 --- !u!70 &359424091
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2197,7 +2197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1783199358}
-  offset: {x: 6, y: 2, z: -10}
+  offset: {x: 4, y: 2, z: -10}
   smootherFactor: 4.99
 --- !u!1 &740101009
 GameObject:
@@ -2233,7 +2233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 500
+  speed: 50
 --- !u!70 &740101011
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3636,7 +3636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 500
+  speed: 50
 --- !u!70 &919676098
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4332,7 +4332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 500
+  speed: 50
 --- !u!70 &1187347263
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4509,7 +4509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 500
+  speed: 50
 --- !u!70 &1196100816
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5434,7 +5434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 500
+  speed: 50
 --- !u!70 &1715465860
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5811,11 +5811,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 784569168200735718, guid: 2284fc491665b1d4688f76e9d5eede28, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.33
+      value: -48.21
       objectReference: {fileID: 0}
     - target: {fileID: 784569168200735718, guid: 2284fc491665b1d4688f76e9d5eede28, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.69
+      value: 1.02
       objectReference: {fileID: 0}
     - target: {fileID: 784569168200735718, guid: 2284fc491665b1d4688f76e9d5eede28, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5983,7 +5983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 90
+  speed: 70
 --- !u!70 &1877989513
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -6531,7 +6531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 500
+  speed: 50
 --- !u!70 &2039328771
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

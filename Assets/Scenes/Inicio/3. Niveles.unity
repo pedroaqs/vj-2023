@@ -4164,6 +4164,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 527573771}
     m_Modifications:
+    - target: {fileID: 1472647448050766221, guid: 8248bf70ab847f1469365f409a0a1d97, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1472647448368202000, guid: 8248bf70ab847f1469365f409a0a1d97, type: 3}
       propertyPath: m_Name
       value: VentaNiveles

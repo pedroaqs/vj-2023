@@ -29,7 +29,7 @@ public class GameDataSGE
     public GameDataSGE(){
         Puntaje   = 0;
         Vida      = 100;
-        Arma      = "Bala";
+        Arma      = "Aro";
         Nivel1    = "Eros";
         Nivel2    = "Helios";
         Nivel3    = "Hefesto";

@@ -703,6 +703,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254204568}
   m_CullTransparentMesh: 1
+--- !u!1 &273566590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 532329663583159177, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+  m_PrefabInstance: {fileID: 974118143}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &273566594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273566590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c2c89da05d2bc489065069dac16038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &284853761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1579,6 +1596,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1128636528325777199, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128636528325777199, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128636528325777199, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 273566594}
+    - target: {fileID: 1128636528325777199, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128636528325777199, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DerechaA
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128636528325777199, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CambioArmaController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128636528325777199, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1654886815577933901, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
       propertyPath: m_Name
       value: Cerrar
@@ -1626,6 +1671,34 @@ PrefabInstance:
     - target: {fileID: 3752253051891052501, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OcultarVJugar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4081293006235149670, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4081293006235149670, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4081293006235149670, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 273566594}
+    - target: {fileID: 4081293006235149670, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4081293006235149670, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IzquierdaA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4081293006235149670, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CambioArmaController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4081293006235149670, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4768200181522392769, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2209,6 +2282,10 @@ PrefabInstance:
     - target: {fileID: 1472647447651122000, guid: 8248bf70ab847f1469365f409a0a1d97, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472647448050766221, guid: 8248bf70ab847f1469365f409a0a1d97, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1472647448368202000, guid: 8248bf70ab847f1469365f409a0a1d97, type: 3}
       propertyPath: m_Name
