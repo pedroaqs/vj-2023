@@ -43,6 +43,9 @@ public class Slime_Controller : MonoBehaviour
         if(other.gameObject.tag == "Bala"){
             Destroy(this.gameObject);
         }
+        if(other.gameObject.tag == "Bala1"){
+            Destroy(this.gameObject,2);
+        }
     }
     void OnTriggerEnter2D(Collider2D other){
         Debug.Log("Trigger");

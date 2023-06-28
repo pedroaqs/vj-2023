@@ -19,7 +19,7 @@ public class GameRepositorySGE : MonoBehaviour
     }
 
     public void SaveDataSGE(GameDataSGE data){
-        string destination = Application.persistentDataPath + "/saveSGE.dat";
+        string destination = Application.persistentDataPath + "/saveSGD.dat";
         FileStream file;
 
         if(File.Exists(destination)){
@@ -33,9 +33,9 @@ public class GameRepositorySGE : MonoBehaviour
         file.Close();
     }
     public GameDataSGE GetSaveDataSGE(){
-        Debug.Log("Loading file saveSGE.dat");
+        Debug.Log("Loading file saveSGD.dat");
 
-        string destination = Application.persistentDataPath + "/saveSGE.dat";
+        string destination = Application.persistentDataPath + "/saveSGD.dat";
         FileStream file;
 
         if(File.Exists(destination)){
@@ -52,9 +52,10 @@ public class GameRepositorySGE : MonoBehaviour
 
     }
     public void DeleteGameSGE(){
-        string destination = Application.persistentDataPath + "/saveSGE.dat";
+        string destination = Application.persistentDataPath + "/saveSGD.dat";
         if(File.Exists(destination)){
             File.Delete(destination);
+            Debug.Log("Delete file saveSGD.dat");
         }
     }
 }

@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 50
+  speed: 20
 --- !u!70 &359424091
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2233,7 +2233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 50
+  speed: 20
 --- !u!70 &740101011
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3636,7 +3636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 50
+  speed: 20
 --- !u!70 &919676098
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4332,7 +4332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 50
+  speed: 20
 --- !u!70 &1187347263
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4509,7 +4509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 50
+  speed: 20
 --- !u!70 &1196100816
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5434,7 +5434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 50
+  speed: 20
 --- !u!70 &1715465860
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5983,7 +5983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 70
+  speed: 50
 --- !u!70 &1877989513
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -6531,7 +6531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1783199358}
-  speed: 50
+  speed: 20
 --- !u!70 &2039328771
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

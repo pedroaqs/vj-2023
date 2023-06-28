@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1267332342}
-  speed: 50
+  speed: 20
 --- !u!61 &511139207
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1267332342}
-  speed: 50
+  speed: 20
 --- !u!61 &625007759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2137,7 +2137,7 @@ GameObject:
   - component: {fileID: 722887097}
   m_Layer: 0
   m_Name: Flotantes
-  m_TagString: Untagged
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4854,7 +4854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1267332342}
-  speed: 50
+  speed: 20
 --- !u!61 &1163449786
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5024,7 +5024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1267332342}
-  speed: 50
+  speed: 20
 --- !u!61 &1192969636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5858,7 +5858,7 @@ GameObject:
   - component: {fileID: 1529466573}
   m_Layer: 0
   m_Name: Piso
-  m_TagString: Untagged
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8259,7 +8259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1267332342}
-  speed: 50
+  speed: 20
 --- !u!61 &1717554476
 BoxCollider2D:
   m_ObjectHideFlags: 0

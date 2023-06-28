@@ -245,7 +245,7 @@ public class PlayerController : MonoBehaviour
             GameManajerC.EstadoNivel(6,true);
             GameManajerC.NivelBoton6();    
         }
-        if(other.gameObject.tag == "Puerta6" && Input.GetKey(KeyCode.E) ){
+        if(other.gameObject.tag == "Puerta6" && Input.GetKey(KeyCode.E) && GameManajerC.ObtenerVidas() >= 50){
             GameManajerC.EstadoNivel(7,true);
             GameManajerC.NivelBoton7();    
         }        

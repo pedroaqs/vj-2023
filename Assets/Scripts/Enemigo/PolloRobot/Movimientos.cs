@@ -50,6 +50,9 @@ public class Movimientos : MonoBehaviour
 
             }
         }
+        if(other.gameObject.tag == "Bala1"){
+            Destroy(this.gameObject,2);
+        }
           if (other.gameObject.tag == "Destruir")
         {
                 Destroy(this.gameObject);

@@ -25,6 +25,7 @@ TagManager:
   - Puerta2
   - Faros
   - Puerta3
+  - Bala1
   layers:
   - Default
   - TransparentFX

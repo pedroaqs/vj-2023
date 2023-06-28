@@ -40,6 +40,15 @@ public class Disparar_Controller : MonoBehaviour
         if(other.gameObject.tag == "Bala"){
             Destroy(this.gameObject);
         }
+        if(other.gameObject.tag == "Bala1"){
+            Destroy(this.gameObject);
+        }
+        if(other.gameObject.tag == "Plataforma"){
+            Destroy(this.gameObject);
+        }
+        if(other.gameObject.tag == "Suelo"){
+            Destroy(this.gameObject);
+        }
         // // if(other.gameObject.tag == "Enemigo"){
         // //     Destroy(this.gameObject);
         // // }  

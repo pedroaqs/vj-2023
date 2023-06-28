@@ -13,13 +13,13 @@ public class CambioArmaController : MonoBehaviour
         aux = 0;
         animator = GetComponent<Animator>();
         GameManajerC = GameObject.Find("InicioManager").GetComponent<GameManajer_Controller>();
-
+        ElegirArma();
     }
 
     // Update is called once per frame
     void Update()
     {
-        ElegirArma();
+        
     }
 
     public void IzquierdaA(){

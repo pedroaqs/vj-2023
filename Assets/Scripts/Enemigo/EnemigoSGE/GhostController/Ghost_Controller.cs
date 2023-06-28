@@ -9,7 +9,7 @@ public class Ghost_Controller : MonoBehaviour
     GameManajer_Controller GameManajerC;
     public Transform player;
     Animator animator;
-    public int speed = 10;
+    public int speed = 7;
     float tiempoVel;
 
     const int AnimacionG_Furia = 1;
@@ -18,6 +18,8 @@ public class Ghost_Controller : MonoBehaviour
     private bool bandActuar;
     int acumularBalas;
     private string sceneName;
+    int auxV;
+    bool bandV =  false;
     // Start is called before the first frame update
     void Start()
     {   
@@ -33,13 +35,32 @@ public class Ghost_Controller : MonoBehaviour
     void Update()
     {
         tiempoVel = Time.deltaTime;
-        
+       // Debug.Log("mmmmmmmmm: " + tiempoVel*100);
         if(bandActuar==true) {
             ChangeAnimation(AnimacionG_Atack);
             Vector3 direction = player.position - transform.position;
             direction.Normalize();
             GetComponent<Rigidbody2D>().MovePosition(transform.position + direction * speed * tiempoVel);   
         }
+
+        auxV = (int)(Time.time);
+        if((auxV%2) == 0){
+
+            if(bandV == false){
+
+                if(sceneName == "1. MundoInicio"){
+                    speed = 7;    
+                }
+                if(sceneName == "3. MundoAcuatico"){
+                    speed = 50;   
+                }
+                
+                bandV = true;
+            }
+
+        }else { bandV = false; }
+
+
         
 
     }
@@ -72,6 +93,23 @@ public class Ghost_Controller : MonoBehaviour
         if(other.gameObject.tag == "Bala"){
             Debug.Log("acumulaciones: "+ acumularBalas);
             if(acumularBalas ==10){
+                if(sceneName == "1. MundoInicio"){
+                    GameManajerC.EstadoNivel(2,true);    
+                }
+                if(sceneName == "3. MundoAcuatico"){
+                    GameManajerC.EstadoNivel(4,true);    
+                }
+                
+                GameManajerC.GanarPuntos(50);
+                GameManajerC.GanarVida(10);
+                Destroy(this.gameObject);
+            }
+            acumularBalas++;
+        }
+        if(other.gameObject.tag == "Bala1"){
+            Debug.Log("acumulaciones: "+ acumularBalas);
+            speed = 2;
+            if(acumularBalas ==15){
                 if(sceneName == "1. MundoInicio"){
                     GameManajerC.EstadoNivel(2,true);    
                 }

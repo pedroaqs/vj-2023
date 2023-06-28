@@ -1636,6 +1636,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3062659807192653577, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062659807192653577, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062659807192653577, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 273566594}
+    - target: {fileID: 3062659807192653577, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062659807192653577, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ElegirArma
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062659807192653577, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CambioArmaController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062659807192653577, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3356544588327473186, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1775,6 +1803,30 @@ PrefabInstance:
     - target: {fileID: 5611952256491324499, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731309035397183556, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_text
+      value: SELECCIONAR ARMA
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731309035397183556, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_fontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731309035397183556, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731309035397183556, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731309035397183556, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_charWidthMaxAdj
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731309035397183556, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8952664285500320607, guid: 62b0eccecaede854abdaae0acddd1512, type: 3}
       propertyPath: m_SizeDelta.x

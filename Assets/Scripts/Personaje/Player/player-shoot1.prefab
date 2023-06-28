@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9152230745986698875}
   m_Layer: 0
   m_Name: player-shoot1
-  m_TagString: Bala
+  m_TagString: Bala1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

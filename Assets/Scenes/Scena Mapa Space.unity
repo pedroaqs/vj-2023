@@ -1542,7 +1542,7 @@ GameObject:
   - component: {fileID: 722887097}
   m_Layer: 0
   m_Name: Flotantes
-  m_TagString: Untagged
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4395,7 +4395,7 @@ GameObject:
   - component: {fileID: 1529466573}
   m_Layer: 0
   m_Name: Piso
-  m_TagString: Untagged
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
